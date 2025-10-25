@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Navbar*/
+.navbar-toggler{
+    color: black;
+    background-color: white;
+  }
+  
+  
+  .nav-item .nav-link{
+      color:white;
+      font-size: 20px;
+      font-family: 'Mulish';
+      font-weight:bolder;  
+    }
+    .nav-item a:hover{
+      color:orange;
+    }
+  
+    .container{
+      font-family: 'Mulish', sans-serif;
+    }
+    .dropdown-item{
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      }
+      .navbar-light{
+        background-color:#333333; 
+       }
+  /*Icon*/
+  .top-social{
+    padding: 15px 15px;
+   
+  }
+  .top-social a{
+    padding: 10px;
+    font-size: 25px;
+  }
+  /*cursor*/
+  .cursor{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #1d1c1c;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+    z-index: 10000;
+  }
+  
+  .cursor2{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color:  #c21616;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .15s;
+    z-index: 10000;
+  }
+  
+  #content:hover ~ .cursor{
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: #c21616;
+    opacity: .5;
+  }
+  
+  #content:hover ~ .cursor2{
+    opacity: 0;
+  }
+
+  /*FAQ*/
+  .faq {
+    text-align: center;
+    justify-content: center;
+    padding:20px;
+    width: 80%;
+  }
+  .faq-icon {
+      height: 18px; 
+      width: 18px; 
+      margin-top: 3px;
+  }
+  .accordion {
+    background-color: khaki;
+    color: #282A35;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.4s;
+ 
+  }
+  .active, .accordion:hover {
+    background-color: yellow;
+    color: #282A35;
+  }
+  .active {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .details-description {
+   font-size:22px;
+   margin-top:20px
+  }
+  .panel {
+    padding: 0 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #f3ecea;
+    margin-top:-28px;
+    color: #282A35;
+    display: none;
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+    text-align: left;
+       
+  }
+  .panel, .accordion {
+    margin-bottom: 2rem;
+  }
+  button.accordion {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .paragraphs {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      white-space: pre-wrap;
+      text-align: center;
+  }
+
+  .header {
+font-size: 40px;
+font-weight: 600;
+font-family: 'Verdana', sans-serif;
+color: black;
+  }
+
+/*footer*/
+  #foooter{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
